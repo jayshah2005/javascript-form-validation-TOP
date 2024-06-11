@@ -1,3 +1,32 @@
 body{
     background-color: lightgrey;
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+:invalid{
+    border: solid red 2px;
+}
+
+form:invalid{
+    border: none;
+}
+
+.submit{
+    width: 5rem;
+    height: auto;
+}
+
+/* label{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    max-width: 10rem;
+} */
