@@ -3,6 +3,8 @@ import "./style.css";
 //validate email
 const button = document.querySelector("#submit");
 const email = document.querySelector("#email");
+const country = document.querySelector("#country");
+const zip = document.querySelector("#zip");
 const password = document.querySelector("#password");
 const confirmation = document.querySelector("#confirmation");
 
@@ -10,13 +12,6 @@ function checkPassword() {
     const password = document.querySelector("#password");
     const confirmation = document.querySelector("#confirmation");
     const errormsg = document.querySelector("#password-msg")
-
-    if(confirmation.value != ""){
-        confirmation.setCustomValidity("")
-    }else{
-        confirmation.setCustomValidity("Please enter a value!")
-        confirmation.reportValidity()
-    }
 
     if(password.value == ""){
         password.setCustomValidity("Please enter a value!")
@@ -78,8 +73,6 @@ function checkZIP() {
         zip.reportValidity();
     }
 }
-
-
 
 button.addEventListener("click", (event) => {
 	event.preventDefault();
