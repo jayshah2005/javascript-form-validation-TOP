@@ -17,16 +17,38 @@ form:invalid{
     border: none;
 }
 
-.submit{
+#submit{
     width: 5rem;
     height: auto;
 }
 
-/* label{
+label{
     display: flex;
     flex-direction: column;
 }
 
 input{
-    max-width: 10rem;
-} */
+    outline: none;
+}
+
+input, select{
+    width: 10rem;
+    padding-block: 0px;
+    padding-inline: 0px;
+    padding: 1px;
+    border: none;
+    border-bottom: solid black 1px;
+}
+
+#password-msg{
+    height: auto;
+    font-size: 0.7rem;
+    background-color: red;
+    width: inherit;
+    border: solid black 1px;
+    border-top: 0px;
+}
+
+select{
+    padding: 1px;
+}

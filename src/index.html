@@ -13,7 +13,12 @@
         </label>
         <label for="country">
             Country:
-            <input type="text" name="country" id="country">
+            <select id="country">
+                <option value="ch">Switzerland</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+                <option value="nl">The Netherlands</option>
+              </select>
         </label>
         <label for="zip">
             Zip Code:
@@ -21,12 +26,16 @@
         </label>
         <label for="password">
             Password:
-            <input type="text" name="password" id="password">
+            <input type="password" name="password" id="password">
         </label>
         <label for="confirmation">
             Password Confirmation:
             <input type="password" name="confirmation" id="confirmation">
+            <span id="password-msg"></span>
         </label>
+        <button id="submit">
+            Submit
+        </button>
     </form>
 </body>
 </html>
